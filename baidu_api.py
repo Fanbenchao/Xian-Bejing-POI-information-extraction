@@ -6,7 +6,7 @@ def urls(itemy, loc):
     urls=[]
     for page in range(0,20):
         url = "http://api.map.baidu.com/place/v2/search?query=" + request.quote(itemy) + "&bounds=" + loc 
-        url = url + "&page_size=20&page_num=" + str(page) + "&output=json&ak=dtSTO9DA4Xmypxt8v3LscKg7h1BoQdRm"
+        url = url + "&page_size=20&page_num=" + str(page) + "&output=json&ak=YourKey"
         urls.append(url)
 
     return urls
